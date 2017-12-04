@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cadastro de Corrida</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <link href='http://fonts.googleapis.com/css?family=OpenSans:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css" />
+ <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+ <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+ <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+ <script type="text/javascript" src="js/jquery.zebra-datepicker.js"></script>
+  <script src="script.js"></script>
+ <script type="text/javascript"></script>
+ <script type="text/javascript"> 
+function mascara(o,f){
+	v_obj=o
+	v_fun=f
+	setTimeout("execmascara()",1)
+}
+function execmascara(){
+	v_obj.value=v_fun(v_obj.value)
+}
+function mreais(v){
+	v=v.replace(/\D/g,"")						//Remove tudo o que não é dígito
+	v=v.replace(/(\d{2})$/,",$1") 			//Coloca a virgula
+	v=v.replace(/(\d+)(\d{3},\d{2})$/g,"$1.$2") 	//Coloca o primeiro ponto
+	return v
+}
+</script>
+ 
+</head>
+<body>
+<div id="mainform">
+<div class="innerdiv">
+<!-- Required Div Starts Here -->
+<div>
+<nav class="menu">
+
+			<ul>
+				<li><a href="#">Cadastros</a>
+					<ul>
+						<li><a href="motorista.html">Motorista</a></li>
+						<li><a href="passageiro.html">Passageiro</a></li>
+						<li><a href="corrida.html">Corrida</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Consultas</a>
+					<ul>
+						<li><a href="consulta_motorista.html">Motorista</a></li>
+						<li><a href="consulta_passageiro.html">Passageiro</a></li>
+						<li><a href="consulta_corrida.html">Corrida</a></li>
+					</ul>
+				<li><a href="ferias_motorista.html">Ferias</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+
+<div>
+<br><br>
+<h2>Cadastro de Corrida</h2<br>
+<h4>Preencha pelo menos 1 campo de Motorista e Passageiro</h4>
+<form id="form" name="form">
+<label>ID do Motorista :</label>
+<input id="motorista" type="text" size="06">
+<label>CPF :</label>
+<input id="cpf1" type="text" size="11" style="text-align: center"><br><br>
+<label>ID do Passageiro:</label>
+<input id="passageiro" type="text" size="06">
+<label>CPF :</label>
+<input id="cpf2" type="text" size="11" style="text-align: center"><br><br>
+<label> Valor: R$</label>
+<input id="valor" type="text" size="11" onkeypress="mascara(this,mreais)"><br><br>
+
+<input id="submit" onclick="cadCorrida()" type="button" value="Cadastrar">
+</div>
+</form>
+<div id="clear"></div>
+</div>
+<div id="clear"></div>
+</div>
+</body>
+</html>

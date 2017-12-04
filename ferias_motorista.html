@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ferias do Motorista</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <link href='http://fonts.googleapis.com/css?family=OpenSans:300,400,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+ <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+ <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+ <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+ <script type="text/javascript" src="js/jquery.zebra-datepicker.js"></script>
+ <script src="script.js"></script>
+</head>
+<body>
+<div id="mainform">
+<div class="innerdiv">
+
+<div>
+<nav class="menu">
+
+			<ul>
+				<li><a href="#">Cadastros</a>
+					<ul>
+						<li><a href="motorista.html">Motorista</a></li>
+						<li><a href="passageiro.html">Passageiro</a></li>
+						<li><a href="corrida.html">Corrida</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Consultas</a>
+					<ul>
+						<li><a href="consulta_motorista.html">Motorista</a></li>
+						<li><a href="consulta_passageiro.html">Passageiro</a></li>
+						<li><a href="consulta_corrida.html">Corrida</a></li>
+					</ul>
+				<li><a href="ferias_motorista.html">Ferias</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+
+<div>
+<br><br>
+
+
+<h2>Ferias do Motorista</h2>
+
+<form id="form" name="form">
+<h4>Digite o ID ou o CPF do motorista:</h4>
+<h4>Caso o Motorista esteja Inativo(em ferias) sera mudado para ativo(trabalhando) e vice e versa:</h4>
+<div>
+<label>ID :</label>
+<input id="idmotorista" type="text" size="13"><br><br>
+<label>CPF :</label>
+<input id="cpf" type="text" size="11" style="text-align: center"><br><br>
+<input id="submit" onclick="feriasMotorista()" type="button" value="Alterar Status">
+</div>
+</form>
+<div id="clear"></div>
+</div>
+<div id="clear"></div>
+</div>
+</body>
+</html>

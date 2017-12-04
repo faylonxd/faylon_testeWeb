@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Consulta de Corrida</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <link href='http://fonts.googleapis.com/css?family=OpenSans:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css" />
+ <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+ <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+ <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+ <script type="text/javascript" src="js/jquery.zebra-datepicker.js"></script>
+ <script src="script.js"></script>
+</head>
+<body>
+<div id="mainform">
+<div class="innerdiv">
+
+<div>
+<nav class="menu">
+
+			<ul>
+				<li><a href="#">Cadastros</a>
+					<ul>
+						<li><a href="motorista.html">Motorista</a></li>
+						<li><a href="passageiro.html">Passageiro</a></li>
+						<li><a href="corrida.html">Corrida</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Consultas</a>
+					<ul>
+						<li><a href="consulta_motorista.html">Motorista</a></li>
+						<li><a href="consulta_passageiro.html">Passageiro</a></li>
+						<li><a href="consulta_corrida.html">Corrida</a></li>
+					</ul>
+				<li><a href="ferias_motorista.html">Ferias</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+
+<div>
+<br><br>
+<h2>Consultar Corridas</h2>
+<form method="POST" action="php/consultaCorrida.php">
+<label>ID do Motorista :</label>
+<input id="idmotorista" type="text" name="idmotorista"><br><br>
+<label>Nome do Motorista :</label>
+<input id="motorista" type="text" name="motorista"><br><br>
+<label>ID do Passageiro :</label>
+<input id="idpassageiro" type="text" name="idpassageiro"><br><br>
+<label>Nome do Passageiro :</label>
+<input id="passageiro" type="text" name="passageiro"><br><br>
+<input type="submit" value="Buscar" name="Consultar">
+</div>
+</form>
+<div id="clear"></div>
+</div>
+<div id="clear"></div>
+</div>
+</body>
+</html>

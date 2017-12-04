@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cadastro de Passageiro</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <link href='http://fonts.googleapis.com/css?family=OpenSans:300,400,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+ <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+ <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+ <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+ <script type="text/javascript" src="js/jquery.zebra-datepicker.js"></script>
+ <script src="script.js"></script>
+</head>
+<body>
+<div id="mainform">
+<div class="innerdiv">
+
+<div>
+<nav class="menu">
+
+			<ul>
+				<li><a href="#">Cadastros</a>
+					<ul>
+						<li><a href="motorista.html">Motorista</a></li>
+						<li><a href="passageiro.html">Passageiro</a></li>
+						<li><a href="corrida.html">Corrida</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Consultas</a>
+					<ul>
+						<li><a href="consulta_motorista.html">Motorista</a></li>
+						<li><a href="consulta_passageiro.html">Passageiro</a></li>
+						<li><a href="consulta_corrida.html">Corrida</a></li>
+					</ul>
+				<li><a href="ferias_motorista.html">Ferias</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+
+<div>
+<br><br>
+
+
+
+<h2>Cadastro de Passageiro</h2>
+<form id="form" name="form">
+
+<div>
+<label>Nome :</label>
+<input id="nome" type="text"><br><br>
+<label>Nascimento :</label>
+<input id="data" type="text"size="06" style="text-align: center"><br><br>
+<label>CPF :</label>
+<input id="cpf" type="text" size="11" style="text-align: center"><br><br>
+<label>Sexo:</label>
+<select id="sexo">
+    <option value="M" >Masculino</option>
+    <option value="F" >Feminino</option>    
+</select><br><br>
+<input id="submit" onclick="cadPassageiro()" type="button" value="Cadastrar">
+</div>
+</form>
+<div id="clear"></div>
+</div>
+<div id="clear"></div>
+</div>
+</body>
+</html>
